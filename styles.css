@@ -148,6 +148,13 @@ h4{
     width: 200px;
     padding: 6px 6px;
 }
+.AboutLink{
+  text-align: center;
+}
+.Link{
+    font-size: 1.6rem;
+    padding: 10px;
+}
 .txt-type > .txt {
   border-right: 0.2rem solid #777;
 }
@@ -209,6 +216,13 @@ h4{
     left: 13%;
     width: 70%;
     height: 80%;
+  }
+  .Link{
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+  .row{
+    padding: 0%;
   }
 }
 @media(max-width: 620px) {
