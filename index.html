@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <title>Hey There!</title>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -89,14 +91,14 @@
         <p class="ContactPadding ContactText">
           Contact Me
         </p>
-<form class="ContactPadding">
+<form class="ContactPadding" id="contactForm">
   <label for="InputName"><div class="contactLabel">Enter Name</div></label>
   <div class="form-row">
     <div class="col">
-      <input type="text" class="form-control" placeholder="First name">
+      <input type="text" class="form-control" placeholder="First name" id="firstName">
     </div>
     <div class="col">
-      <input type="text" class="form-control" placeholder="Last name">
+      <input type="text" class="form-control" placeholder="Last name" id="lastName">
     </div>
   </div>
   <div class="padding2"></div>
@@ -116,13 +118,15 @@
   <div class="footer">Made with ❤ by Ajmal Hassan</div>
 </div>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script> -->
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-database.js"></script>
 
-<script>
+<!-- <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyAl2R_f4Xlnmf2bq_7D6sA7FnIqbMzr-d4",
@@ -137,7 +141,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-</script>
+</script> -->
 <script src="firebaseForm.js"></script>
 </body>
 </html>
