@@ -25,6 +25,11 @@ function submitForm(e){
     var comment=getFormData('comment');
 
     saveMessage(fName,lName,email,comment);
+
+    document.querySelector('.alert').style.display='block';
+    setTimeout(function(){
+        document.querySelector('.alert').style.display='none';
+    },3000);
 }
 
 function getFormData(id){
