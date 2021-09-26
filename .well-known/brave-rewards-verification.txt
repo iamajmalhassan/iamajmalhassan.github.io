@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: iamajmalhassan.github.io
-Token: aff53b7d06a9bb1b8d0cc1e8c4e6240e2f7a24415c2eeb6fcceba0d9a3162770
